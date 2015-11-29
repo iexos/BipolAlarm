@@ -6,3 +6,9 @@
 /build
 /captures
 *.iml
+
+# Temp files
+*~
+*.autosave
+*.bak
+*\#
