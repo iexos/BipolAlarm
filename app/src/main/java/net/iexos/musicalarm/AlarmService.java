@@ -9,6 +9,7 @@ import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
+import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.IBinder;
 import android.os.PowerManager;
@@ -157,16 +158,26 @@ public final class AlarmService extends Service {
         }
         mState = State.RINGING;
         if (mIsPlaying) mMusicPlayer.pause();
+        mAlarmPlayer.setAudioStreamType(AudioManager.STREAM_ALARM);
+        mAlarmPlayer.setLooping(true);
         try {
-            mAlarmPlayer.setAudioStreamType(AudioManager.STREAM_ALARM);
-            mAlarmPlayer.setLooping(true);
             mAlarmPlayer.setDataSource(this, mRingtoneUri);
-            //TODO define fallbacks
             mAlarmPlayer.prepare();
             mAlarmPlayer.start();
         }
-        catch (IOException e) {
-            Log.e(LOGGING_TAG, e.toString());
+        catch (IOException e1) {
+            Log.e(LOGGING_TAG, e1.toString());
+            Log.i(LOGGING_TAG, "Using fallback ringtone");
+            try {
+                mAlarmPlayer.reset();
+                mAlarmPlayer.setDataSource(this,
+                        RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM));
+                mAlarmPlayer.prepare();
+                mAlarmPlayer.start();
+            }
+            catch (IOException e2) {
+                Log.e(LOGGING_TAG, "fallback failed: " + e2.toString());
+            }
         }
     }
 
