@@ -12,6 +12,10 @@
     <string name="cancel">Cancel</string>
     <string name="set_delay">Set delay</string>
     <string name="choose_playlist">Choose playlist</string>
+    <string name="no_playlist_dialog_title">No playlist found</string>
+    <string name="no_playlist_dialog_message">You can create playlists with most standard music
+        player apps (eg. Apollo).\n
+        \nSee also: https://github.com/iexos/BipolAlarm/issues/4</string>
     <string name="choose_ringtone">Choose ringtone</string>
     <string name="no_valid_playlist">No valid playlist</string>
     <string name="error_playlist">ERROR: no valid playlist selected</string>

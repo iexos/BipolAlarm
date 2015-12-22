@@ -19,6 +19,13 @@ public final class PlaylistDialog extends DialogFragment {
         final ListAdapter adapter = playlistManager.getPlaylistAdapter(getActivity());
 
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+
+        if (adapter.isEmpty()) {
+            return builder.setTitle(R.string.no_playlist_dialog_title)
+                          .setMessage(R.string.no_playlist_dialog_message)
+                          .setPositiveButton(R.string.ok, null)
+                          .create();
+        }
         return builder.setTitle(R.string.choose_playlist)
                       .setAdapter(adapter, new DialogInterface.OnClickListener() {
                           public void onClick(DialogInterface dialog, int which) {
