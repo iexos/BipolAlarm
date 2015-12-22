@@ -41,6 +41,6 @@
     <string name="notification_title_waiting">BipolAlarm</string>
     <string name="notification_waiting">Sonnerie de l\'alarme à <xliff:g >%s</xliff:g></string>
     <string name="notification_playing">Jouant</string>
-    <string name="notification_playing_upcoming">Jouant, sonnerie de l'alarme à <xliff:g>%s</xliff:g></string>
+    <string name="notification_playing_upcoming">Jouant, sonnerie de l\'alarme à <xliff:g>%s</xliff:g></string>
     <string name="notification_ringing">Sonnant</string>
 </resources>
