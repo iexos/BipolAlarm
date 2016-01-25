@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="rn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">BipolAlarm</string>
+
+    <string name="action_settings">Einstellungen</string>
+    <string name="alarm_off">Wecker aus</string>
+    <string name="alarm_on">Weckera an</string>
+    <string name="placeholder">Das solltest du nicht sehen</string>
+    <string name="time_placeholder">08:30</string>
+    <string name="test_player">Musik</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Beenden</string>
+    <string name="set_delay">Setze Verzögerung</string>
+    <string name="choose_playlist">Wiedergabeliste wählen</string>
+    <string name="no_playlist_dialog_title">Keine Wiedergabelsite gefunden</string>
+    <string name="no_playlist_dialog_message">Du kannst eine Wiedergabeliste mit den meisten Musikspielern erstellen (z.B.: Apollo).\n
+        \nSiehe auch: https://github.com/iexos/BipolAlarm/issues/4</string>
+    <string name="choose_ringtone">Wälhe einen Klingelkont</string>
+    <string name="no_valid_playlist">Keine valide Wiedergabeliste</string>
+    <string name="error_playlist">FEHLER: keine valide Wiedergabeliste gewählt</string>
+    <string name="icon_music_note">Musik Notiz</string>
+    <string name="icon_bell">Klingel</string>
+    <string name="toast_alarm_set">Wecker eingerichtet!</string>
+    <string name="notification_dismiss_all">Alles stoppen</string>
+    <string name="notification_dismiss_alarm">Wecker ausstellen</string>
+    <string name="notification_snooze">Schlummern</string>
+    <string name="notification_title_playing">BipolAlarm</string>
+    <string name="notification_title_ringing">BipolAlarm</string>
+    <string name="notification_title_waiting">BipolAlarm</string>
+    <string name="notification_waiting">Wecker klingel um<xliff:g >%s</xliff:g></string>
+    <string name="notification_playing">Spielen</string>
+    <string name="notification_playing_upcoming">Spielen, wecker klingelt um <xliff:g>%s</xliff:g></string>
+    <string name="notification_ringing">Klingen</string>
+</resources>
