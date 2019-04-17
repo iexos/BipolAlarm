@@ -1,3 +1,7 @@
+unmaintained notice
+===================
+This project is not maintained anymore.
+
 BipolAlarm
 ==========
 BipolAlarm is an Android alarm app which uses two stages to wake you up.
